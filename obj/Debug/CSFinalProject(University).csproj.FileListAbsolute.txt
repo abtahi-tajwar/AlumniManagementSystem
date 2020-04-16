@@ -1,0 +1,9 @@
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\bin\Debug\CSFinalProject(University).exe.config
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\bin\Debug\CSFinalProject(University).exe
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\bin\Debug\CSFinalProject(University).pdb
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject(University).csprojAssemblyReference.cache
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.Properties.Resources.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject(University).csproj.GenerateResource.cache
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject(University).exe
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject(University).pdb
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.LoginForm.resources
