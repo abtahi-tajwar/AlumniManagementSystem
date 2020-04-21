@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CSFinalProject_University_
 {
@@ -58,10 +59,7 @@ namespace CSFinalProject_University_
             }
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void LoginHover(object sender, EventArgs e)
         {
@@ -77,5 +75,15 @@ namespace CSFinalProject_University_
         {
             Application.Exit();
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistrationForm rf = new RegistrationForm();
+            rf.Show();
+        }
+
+       
+        
     }
 }
