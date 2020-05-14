@@ -33,3 +33,4 @@ F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj
 F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.StudentListForm.resources
 F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.UpdateForm.resources
 F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.RegistrationFormTwo.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.AlumniDashboard.resources
