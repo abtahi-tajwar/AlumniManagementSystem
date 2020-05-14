@@ -10,17 +10,12 @@ using System.Windows.Forms;
 
 namespace CSFinalProject_University_
 {
-    public partial class AlumniDashboard : Form
+    public partial class AdminDasboard : Form
     {
-        public AlumniDashboard()
+        public AdminDasboard()
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

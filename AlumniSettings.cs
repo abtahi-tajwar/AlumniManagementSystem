@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace CSFinalProject_University_
 {
-    public partial class AlumniDashboard : Form
+    public partial class AlumniSettings : Form
     {
-        public AlumniDashboard()
+        public AlumniSettings()
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

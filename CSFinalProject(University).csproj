@@ -52,11 +52,35 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminDasboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDasboard.Designer.cs">
+      <DependentUpon>AdminDasboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSettings.Designer.cs">
+      <DependentUpon>AdminSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="AlumniDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AlumniDashboard.Designer.cs">
       <DependentUpon>AlumniDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumniSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumniSettings.Designer.cs">
+      <DependentUpon>AlumniSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProfile.Designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="EventForm.cs">
       <SubType>Form</SubType>
@@ -117,8 +141,20 @@
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminDasboard.resx">
+      <DependentUpon>AdminDasboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSettings.resx">
+      <DependentUpon>AdminSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AlumniDashboard.resx">
       <DependentUpon>AlumniDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumniSettings.resx">
+      <DependentUpon>AlumniSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProfile.resx">
+      <DependentUpon>EditProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventForm.resx">
       <DependentUpon>EventForm.cs</DependentUpon>
