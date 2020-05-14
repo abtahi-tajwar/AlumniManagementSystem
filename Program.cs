@@ -16,7 +16,7 @@ namespace CSFinalProject_University_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegistrationForm());
+            Application.Run(new RegistrationFormTwo());
         }
     }
 }

@@ -24,3 +24,12 @@ C:\Users\pc\source\repos\Project\AlumniManagementSystem\obj\Debug\CSFinalProject
 C:\Users\pc\source\repos\Project\AlumniManagementSystem\bin\Debug\CSFinalProject(University).exe.config
 C:\Users\pc\source\repos\Project\AlumniManagementSystem\bin\Debug\CSFinalProject(University).exe
 C:\Users\pc\source\repos\Project\AlumniManagementSystem\bin\Debug\CSFinalProject(University).pdb
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.AboutForm.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.EventForm.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.MentorshipForm.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.RegistrationForm.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.RegistrationPageOne.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.StudentForm.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.StudentListForm.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.UpdateForm.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.RegistrationFormTwo.resources

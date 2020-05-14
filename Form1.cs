@@ -83,7 +83,9 @@ namespace CSFinalProject_University_
             rf.Show();
         }
 
-       
-        
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
