@@ -29,47 +29,49 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationFormTwo));
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.EmailText = new System.Windows.Forms.TextBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.CPasswordText = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PasswordText = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.SubtitleText = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.DescriptionText = new System.Windows.Forms.TextBox();
+            this.Register = new System.Windows.Forms.PictureBox();
+            this.BackButton = new System.Windows.Forms.PictureBox();
+            this.Close = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Register)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Close)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox10
+            // EmailText
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(306, 68);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(620, 18);
-            this.textBox10.TabIndex = 22;
-            this.textBox10.Text = "Enter Email";
+            this.EmailText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmailText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailText.Location = new System.Drawing.Point(408, 84);
+            this.EmailText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmailText.Name = "EmailText";
+            this.EmailText.Size = new System.Drawing.Size(827, 22);
+            this.EmailText.TabIndex = 22;
+            this.EmailText.Text = "Enter Email";
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(306, 87);
+            this.pictureBox11.Location = new System.Drawing.Point(408, 107);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(620, 3);
+            this.pictureBox11.Size = new System.Drawing.Size(827, 4);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 21;
             this.pictureBox11.TabStop = false;
@@ -77,68 +79,75 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-77, -94);
+            this.pictureBox1.Location = new System.Drawing.Point(-103, -116);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(355, 754);
+            this.pictureBox1.Size = new System.Drawing.Size(473, 928);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox2
+            // CPasswordText
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(631, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(297, 18);
-            this.textBox2.TabIndex = 26;
-            this.textBox2.Text = "Confirm Password";
+            this.CPasswordText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CPasswordText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CPasswordText.Location = new System.Drawing.Point(841, 156);
+            this.CPasswordText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CPasswordText.Name = "CPasswordText";
+            this.CPasswordText.Size = new System.Drawing.Size(396, 22);
+            this.CPasswordText.TabIndex = 26;
+            this.CPasswordText.Text = "Confirm Password";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(631, 146);
+            this.pictureBox3.Location = new System.Drawing.Point(841, 180);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(297, 3);
+            this.pictureBox3.Size = new System.Drawing.Size(396, 4);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 25;
             this.pictureBox3.TabStop = false;
             // 
-            // textBox1
+            // PasswordText
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(306, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(297, 18);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "Enter Password";
+            this.PasswordText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PasswordText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordText.Location = new System.Drawing.Point(408, 156);
+            this.PasswordText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PasswordText.Name = "PasswordText";
+            this.PasswordText.Size = new System.Drawing.Size(396, 22);
+            this.PasswordText.TabIndex = 24;
+            this.PasswordText.Text = "Enter Password";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(306, 146);
+            this.pictureBox2.Location = new System.Drawing.Point(408, 180);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(297, 3);
+            this.pictureBox2.Size = new System.Drawing.Size(396, 4);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox3
+            // SubtitleText
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(306, 188);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(620, 18);
-            this.textBox3.TabIndex = 28;
-            this.textBox3.Text = "Profile Subtitle";
+            this.SubtitleText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SubtitleText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubtitleText.Location = new System.Drawing.Point(408, 231);
+            this.SubtitleText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SubtitleText.Name = "SubtitleText";
+            this.SubtitleText.Size = new System.Drawing.Size(827, 22);
+            this.SubtitleText.TabIndex = 28;
+            this.SubtitleText.Text = "Profile Subtitle";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(306, 207);
+            this.pictureBox4.Location = new System.Drawing.Point(408, 255);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(620, 3);
+            this.pictureBox4.Size = new System.Drawing.Size(827, 4);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 27;
             this.pictureBox4.TabStop = false;
@@ -146,73 +155,84 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(306, 238);
+            this.pictureBox5.Location = new System.Drawing.Point(408, 293);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(620, 96);
+            this.pictureBox5.Size = new System.Drawing.Size(827, 118);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 29;
             this.pictureBox5.TabStop = false;
             // 
-            // textBox4
+            // DescriptionText
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(320, 249);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(593, 18);
-            this.textBox4.TabIndex = 30;
-            this.textBox4.Text = "Description";
+            this.DescriptionText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DescriptionText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescriptionText.Location = new System.Drawing.Point(427, 306);
+            this.DescriptionText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DescriptionText.Name = "DescriptionText";
+            this.DescriptionText.Size = new System.Drawing.Size(791, 22);
+            this.DescriptionText.TabIndex = 30;
+            this.DescriptionText.Text = "Description";
             // 
-            // pictureBox13
+            // Register
             // 
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(609, 385);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(182, 43);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 32;
-            this.pictureBox13.TabStop = false;
+            this.Register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Register.Image = ((System.Drawing.Image)(resources.GetObject("Register.Image")));
+            this.Register.Location = new System.Drawing.Point(812, 474);
+            this.Register.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Register.Name = "Register";
+            this.Register.Size = new System.Drawing.Size(243, 53);
+            this.Register.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Register.TabIndex = 32;
+            this.Register.TabStop = false;
+            this.Register.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
-            // pictureBox12
+            // BackButton
             // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(421, 385);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(182, 43);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 31;
-            this.pictureBox12.TabStop = false;
+            this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
+            this.BackButton.Location = new System.Drawing.Point(561, 474);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(243, 53);
+            this.BackButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BackButton.TabIndex = 31;
+            this.BackButton.TabStop = false;
             // 
-            // pictureBox14
+            // Close
             // 
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(906, 12);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 33;
-            this.pictureBox14.TabStop = false;
+            this.Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Close.Image = ((System.Drawing.Image)(resources.GetObject("Close.Image")));
+            this.Close.Location = new System.Drawing.Point(1208, 15);
+            this.Close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(33, 31);
+            this.Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Close.TabIndex = 33;
+            this.Close.TabStop = false;
+            this.Close.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // RegistrationFormTwo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(952, 512);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.textBox4);
+            this.ClientSize = new System.Drawing.Size(1269, 630);
+            this.Controls.Add(this.Close);
+            this.Controls.Add(this.Register);
+            this.Controls.Add(this.BackButton);
+            this.Controls.Add(this.DescriptionText);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.SubtitleText);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.CPasswordText);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PasswordText);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.EmailText);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RegistrationFormTwo";
             this.Text = "RegistrationFormTwo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -221,9 +241,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Register)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,18 +252,18 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox EmailText;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox CPasswordText;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PasswordText;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox SubtitleText;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.TextBox DescriptionText;
+        private System.Windows.Forms.PictureBox Register;
+        private System.Windows.Forms.PictureBox BackButton;
+        private System.Windows.Forms.PictureBox Close;
     }
 }

@@ -12,10 +12,36 @@ namespace CSFinalProject_University_
 {
     public partial class RegistrationFormTwo : Form
     {
+        private string fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work;
+        private string email, password, cpassword, subtitle, desc; 
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public RegistrationFormTwo()
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+        }
+        public RegistrationFormTwo(string fname, string lname, string sid, string age, string pyear, string present_address, string permanent_address, string father, string mother, string work)
+        {
+            this.fname = fname;
+            this.lname = lname;
+            this.sid = sid;
+            this.age = age;
+            this.pyear = pyear;
+            this.present_address = present_address;
+            this.permanent_address = permanent_address;
+            this.father = father;
+            this.mother = mother;
+            this.work = work;
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -79,8 +79,8 @@ namespace CSFinalProject_University_
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RegistrationForm rf = new RegistrationForm();
-            rf.Show();
+            RegistrationPageOne rPage = new RegistrationPageOne();
+            rPage.Show();
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
