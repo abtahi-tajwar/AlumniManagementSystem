@@ -38,3 +38,5 @@ F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj
 F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.AdminDasboard.resources
 F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.EditProfile.resources
 F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\obj\Debug\CSFinalProject_University_.AdminSettings.resources
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\bin\Debug\Database1.mdf
+F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\bin\Debug\Database1_log.ldf
