@@ -13,12 +13,19 @@ namespace CSFinalProject_University_
     public partial class RegistrationFormTwo : Form
     {
         private string fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work;
-        private string email, password, cpassword, subtitle, desc; 
+        private string email, password, cpassword, subtitle, desc;
 
-        private void pictureBox13_Click(object sender, EventArgs e)
+        private void Register_Click(object sender, EventArgs e)
         {
-
+            email = EmailText.Text;
+            password = PasswordText.Text;
+            cpassword = CPasswordText.Text;
+            subtitle = SubtitleText.Text;
+            desc = DescriptionText.Text;
         }
+
+        
+
 
         public RegistrationFormTwo()
         {
