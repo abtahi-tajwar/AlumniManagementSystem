@@ -18,6 +18,13 @@ namespace CSFinalProject_University_
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            DatabaseManager manager = new DatabaseManager();
+            Session session = new Session();
+            Console.WriteLine(manager.getAlumni("FirstName", 1));
+            Console.WriteLine("Hello world");
+            Console.WriteLine(manager.authUser("abtahitajwar@gmail.com", "1234"));
+            Console.WriteLine(manager.authUser("abtahitajwar@gmail.com", "2222"));
+            Console.WriteLine(Session.subtitle);
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)

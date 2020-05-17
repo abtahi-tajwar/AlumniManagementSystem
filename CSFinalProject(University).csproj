@@ -134,6 +134,7 @@
     <Compile Include="RegistrationPageOne.Designer.cs">
       <DependentUpon>RegistrationPageOne.cs</DependentUpon>
     </Compile>
+    <Compile Include="Session.cs" />
     <Compile Include="StudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
