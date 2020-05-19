@@ -110,6 +110,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventOrganizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventOrganizer.Designer.cs">
+      <DependentUpon>EventOrganizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mentorship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mentorship.Designer.cs">
+      <DependentUpon>Mentorship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeAdmin.Designer.cs">
+      <DependentUpon>WelcomeAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="MentorshipForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,8 +194,14 @@
     <EmbeddedResource Include="EventForm.resx">
       <DependentUpon>EventForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EventOrganizer.resx">
+      <DependentUpon>EventOrganizer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mentorship.resx">
+      <DependentUpon>Mentorship.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MentorshipForm.resx">
       <DependentUpon>MentorshipForm.cs</DependentUpon>
@@ -209,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeAdmin.resx">
+      <DependentUpon>WelcomeAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

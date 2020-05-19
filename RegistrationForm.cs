@@ -50,5 +50,10 @@ namespace CSFinalProject_University_
             }
             sqlCmd.Connection.Close();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
