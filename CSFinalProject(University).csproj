@@ -122,6 +122,12 @@
     <Compile Include="Mentorship.Designer.cs">
       <DependentUpon>Mentorship.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRegistration.designer.cs">
+      <DependentUpon>StudentRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="WelcomeAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentListForm.resx">
       <DependentUpon>StudentListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRegistration.resx">
+      <DependentUpon>StudentRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
