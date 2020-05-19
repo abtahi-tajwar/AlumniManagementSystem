@@ -33,7 +33,9 @@ namespace CSFinalProject_University_
             subtitle = SubtitleText.Text;
             desc = DescriptionText.Text;
 
-            if (email != "" || password != "" || cpassword != "")
+            //if (email != "" || password != "" || cpassword != "")
+            if(!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password) && !string.IsNullOrEmpty(cpassword)
+                && !string.IsNullOrEmpty(subtitle) && !string.IsNullOrEmpty(desc))
             {
                 if (password.Equals(cpassword))
                 {
