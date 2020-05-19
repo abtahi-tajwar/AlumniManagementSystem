@@ -26,5 +26,15 @@ namespace CSFinalProject_University_
         {
 
         }
+
+        private void UserNameText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace CSFinalProject_University_
         {
             InitializeComponent();
         }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
