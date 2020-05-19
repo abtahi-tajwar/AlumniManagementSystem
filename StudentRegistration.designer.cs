@@ -313,7 +313,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AlumniManagement.Properties.Resources.Capture;
+         //   this.BackgroundImage = global::AlumniManagement.Properties.Resources.Capture;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1309, 498);
             this.Controls.Add(this.txtPassword);
