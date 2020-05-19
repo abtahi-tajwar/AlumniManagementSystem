@@ -130,6 +130,13 @@ namespace CSFinalProject_University_
             cmd.Connection.Close();
 
         }
+
+        /////////
+        //Events
+        /// <summary>
+        /// Here all event code goes
+        /// </summary>
+        /// <returns></returns>
         
         public int getLatestEventNumber() {
             int eventNumber;
@@ -145,6 +152,43 @@ namespace CSFinalProject_University_
         {
             NonQuery(string.Format("INSERT INTO Events (Id, EventName, EventDate, Perticipants) VALUES ({0}, '{1}', '{2}', {3})", EventCount, eventDesc, date, 0));
             updateEventNumber();
+        }
+        public string getLastEvent(string type)
+        {
+            if (type.ToLower().Equals("name"))
+            {
+                DataTable dt = Query("SELECT EventName FROM Events ORDER BY Id DESC");
+                return dt.Rows[0]["EventName"].ToString();
+
+            }
+            else if (type.ToLower().Equals("date"))
+            {
+                DataTable dt = Query("SELECT EventDate FROM Events ORDER BY Id DESC");
+                return dt.Rows[0]["EventDate"].ToString();
+            }
+            else {
+                return "Error";
+            }
+        }
+        public void updateEventCount(int id)
+        {
+            DataTable dt = Query("SELECT * FROM Events ORDER BY Id DESC");
+            int num = Convert.ToInt32(dt.Rows[0]["Perticipants"]);
+            int EventID = Convert.ToInt32(dt.Rows[0]["Id"]);
+            num = num + 1;
+            NonQuery("UPDATE Events SET Perticipants = " + num + "WHERE Id = " + EventID);
+            NonQuery(String.Format("INSERT INTO EventPerticipants (EventID, AlumniID) VALUES ({0}, {1})", EventID, id));
+        }
+        public bool checkEventGoing(int id)
+        {
+            DataTable dt = Query("SELECT * FROM EventPerticipants WHERE AlumniID = " + id);
+            if (dt.Rows.Count > 0)
+            {
+                return true;
+            }
+            else {
+                return false;
+            }
         }
     }
 }

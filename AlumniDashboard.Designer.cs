@@ -46,7 +46,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.UserNameText = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.SubtitleText = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -56,9 +56,11 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.GoingFalse = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.EmailText = new System.Windows.Forms.Label();
+            this.DetailsText = new System.Windows.Forms.Label();
+            this.GoingTrue = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -72,8 +74,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GoingFalse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GoingTrue)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -247,7 +250,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(931, 65);
+            this.pictureBox9.Location = new System.Drawing.Point(832, 61);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(202, 192);
@@ -261,7 +264,7 @@
             this.UserNameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.UserNameText.Font = new System.Drawing.Font("Segoe UI", 16.25F);
             this.UserNameText.ForeColor = System.Drawing.Color.White;
-            this.UserNameText.Location = new System.Drawing.Point(943, 279);
+            this.UserNameText.Location = new System.Drawing.Point(840, 267);
             this.UserNameText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UserNameText.Name = "UserNameText";
             this.UserNameText.Size = new System.Drawing.Size(194, 38);
@@ -269,26 +272,26 @@
             this.UserNameText.Text = "David Gilmour";
             this.UserNameText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label9
+            // SubtitleText
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(936, 316);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(200, 25);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Senior Web Developer";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SubtitleText.AutoSize = true;
+            this.SubtitleText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.SubtitleText.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.SubtitleText.ForeColor = System.Drawing.Color.White;
+            this.SubtitleText.Location = new System.Drawing.Point(842, 305);
+            this.SubtitleText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SubtitleText.Name = "SubtitleText";
+            this.SubtitleText.Size = new System.Drawing.Size(200, 25);
+            this.SubtitleText.TabIndex = 17;
+            this.SubtitleText.Text = "Senior Web Developer";
+            this.SubtitleText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(1152, 225);
+            this.pictureBox10.Location = new System.Drawing.Point(1042, 225);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(47, 43);
@@ -315,6 +318,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 20;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // label11
             // 
@@ -390,17 +394,18 @@
             this.label14.TabIndex = 26;
             this.label14.Text = "27th September, 2020";
             // 
-            // pictureBox14
+            // GoingFalse
             // 
-            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(347, 543);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(120, 44);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 27;
-            this.pictureBox14.TabStop = false;
+            this.GoingFalse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GoingFalse.Image = ((System.Drawing.Image)(resources.GetObject("GoingFalse.Image")));
+            this.GoingFalse.Location = new System.Drawing.Point(347, 543);
+            this.GoingFalse.Margin = new System.Windows.Forms.Padding(4);
+            this.GoingFalse.Name = "GoingFalse";
+            this.GoingFalse.Size = new System.Drawing.Size(120, 44);
+            this.GoingFalse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GoingFalse.TabIndex = 27;
+            this.GoingFalse.TabStop = false;
+            this.GoingFalse.Click += new System.EventHandler(this.GoingFalse_Click);
             // 
             // pictureBox15
             // 
@@ -414,20 +419,48 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 28;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
-            // label15
+            // EmailText
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(958, 341);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(159, 19);
-            this.label15.TabIndex = 29;
-            this.label15.Text = "abtahitajwar@gmail.com";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EmailText.AutoSize = true;
+            this.EmailText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.EmailText.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.EmailText.ForeColor = System.Drawing.Color.White;
+            this.EmailText.Location = new System.Drawing.Point(843, 330);
+            this.EmailText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.EmailText.Name = "EmailText";
+            this.EmailText.Size = new System.Drawing.Size(159, 19);
+            this.EmailText.TabIndex = 29;
+            this.EmailText.Text = "abtahitajwar@gmail.com";
+            this.EmailText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DetailsText
+            // 
+            this.DetailsText.AutoSize = true;
+            this.DetailsText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.DetailsText.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.DetailsText.ForeColor = System.Drawing.Color.White;
+            this.DetailsText.Location = new System.Drawing.Point(843, 366);
+            this.DetailsText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DetailsText.Name = "DetailsText";
+            this.DetailsText.Size = new System.Drawing.Size(159, 19);
+            this.DetailsText.TabIndex = 30;
+            this.DetailsText.Text = "abtahitajwar@gmail.com";
+            this.DetailsText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // GoingTrue
+            // 
+            this.GoingTrue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GoingTrue.Image = ((System.Drawing.Image)(resources.GetObject("GoingTrue.Image")));
+            this.GoingTrue.Location = new System.Drawing.Point(347, 543);
+            this.GoingTrue.Margin = new System.Windows.Forms.Padding(4);
+            this.GoingTrue.Name = "GoingTrue";
+            this.GoingTrue.Size = new System.Drawing.Size(120, 44);
+            this.GoingTrue.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GoingTrue.TabIndex = 31;
+            this.GoingTrue.TabStop = false;
+            this.GoingTrue.Visible = false;
             // 
             // AlumniDashboard
             // 
@@ -435,9 +468,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1269, 630);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.GoingTrue);
+            this.Controls.Add(this.DetailsText);
+            this.Controls.Add(this.EmailText);
             this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.GoingFalse);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.label13);
@@ -447,7 +482,7 @@
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.SubtitleText);
             this.Controls.Add(this.UserNameText);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -481,8 +516,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GoingFalse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GoingTrue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -507,7 +543,7 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label UserNameText;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label SubtitleText;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox11;
@@ -517,8 +553,10 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox GoingFalse;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label EmailText;
+        private System.Windows.Forms.Label DetailsText;
+        private System.Windows.Forms.PictureBox GoingTrue;
     }
 }
