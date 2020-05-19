@@ -14,6 +14,13 @@ namespace CSFinalProject_University_
     {
         private string fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work;
 
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
+
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -23,6 +30,20 @@ namespace CSFinalProject_University_
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+        }
+        public RegistrationPageOne(string fname, string lname, string sid, string age, string pyear, string present_address, string permanent_address, string father, string mother, string work) {
+            InitializeComponent();
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            firstName.Text = fname;
+            lastName.Text = lname;
+            StudentID.Text = sid;
+            Age.Text = age;
+            PassingYear.Text = pyear;
+            PresentAddress.Text = present_address;
+            PermanentAddress.Text = permanent_address;
+            FatherName.Text = father;
+            MotherName.Text = mother;
+            Work.Text = work;
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)

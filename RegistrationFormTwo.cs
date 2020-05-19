@@ -13,6 +13,16 @@ namespace CSFinalProject_University_
     public partial class RegistrationFormTwo : Form
     {
         private string fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work;
+
+
+        //Registration form click back button
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            RegistrationPageOne pageOne = new RegistrationPageOne(fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work);
+            pageOne.Show();
+            this.Hide();
+        }
+
         private string email, password, cpassword, subtitle, desc;
 
         private void Register_Click(object sender, EventArgs e)
@@ -30,6 +40,9 @@ namespace CSFinalProject_University_
                     DatabaseManager manager = new DatabaseManager();
                     manager.createAlumni(DatabaseManager.Count
                         , fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work, email, password, subtitle, desc);
+                    LoginForm loginForm = new LoginForm();
+                    loginForm.Show();
+                    this.Hide();
                 }
                 else
                 {

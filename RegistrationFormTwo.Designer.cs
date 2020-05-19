@@ -43,6 +43,7 @@
             this.Register = new System.Windows.Forms.PictureBox();
             this.BackButton = new System.Windows.Forms.PictureBox();
             this.Close = new System.Windows.Forms.PictureBox();
+            this.warning = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -198,6 +199,7 @@
             this.BackButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BackButton.TabIndex = 31;
             this.BackButton.TabStop = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // Close
             // 
@@ -212,12 +214,23 @@
             this.Close.TabStop = false;
             this.Close.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
+            // warning
+            // 
+            this.warning.AutoSize = true;
+            this.warning.Location = new System.Drawing.Point(602, 588);
+            this.warning.Name = "warning";
+            this.warning.Size = new System.Drawing.Size(376, 17);
+            this.warning.TabIndex = 34;
+            this.warning.Text = "Warrning:  Please fill out everything with address and work";
+            this.warning.Visible = false;
+            // 
             // RegistrationFormTwo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1269, 630);
+            this.Controls.Add(this.warning);
             this.Controls.Add(this.Close);
             this.Controls.Add(this.Register);
             this.Controls.Add(this.BackButton);
@@ -265,5 +278,6 @@
         private System.Windows.Forms.PictureBox Register;
         private System.Windows.Forms.PictureBox BackButton;
         private System.Windows.Forms.PictureBox Close;
+        private System.Windows.Forms.Label warning;
     }
 }

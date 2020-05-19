@@ -14,15 +14,18 @@ namespace CSFinalProject_University_
     public partial class LoginForm : Form
     {
         bool studentIdPlaceholderText = true;
+        string id, password;
+
+        Session session;
+        DatabaseManager manager;
+
         public LoginForm()
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            DatabaseManager manager = new DatabaseManager();
-            Session session = new Session();
-            Console.WriteLine(manager.getAlumni("FirstName", 1));
-            Console.WriteLine("Hello world");
-            Console.WriteLine(manager.authUser("abtahitajwar@gmail.com", "1234"));
+            manager = new DatabaseManager();
+            session = new Session();
+            Console.WriteLine(manager.authUser("19-40281-1", "1234"));
             Console.WriteLine(manager.authUser("abtahitajwar@gmail.com", "2222"));
             Console.WriteLine(Session.subtitle);
         }
@@ -36,17 +39,17 @@ namespace CSFinalProject_University_
 
         void passwordReset(object sender, EventArgs e)
         {
-            if (!password.UseSystemPasswordChar) {
-                password.UseSystemPasswordChar = true;
-                password.Text = "";
+            if (!txtPassword.UseSystemPasswordChar) {
+                txtPassword.UseSystemPasswordChar = true;
+                txtPassword.Text = "";
             }
             
         }
         void passwordPlaceholder(object sender, EventArgs e)
         {
-            if (password.Text == "") {
-                password.Text = "Password";
-                password.UseSystemPasswordChar = false;
+            if (txtPassword.Text == "") {
+                txtPassword.Text = "Password";
+                txtPassword.UseSystemPasswordChar = false;
             }
         }
         void studentIdReset(object sender, EventArgs e)
@@ -93,6 +96,40 @@ namespace CSFinalProject_University_
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        //Login Button Clicked
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            id = txtUsername.Text;
+            password = txtPassword.Text;
+            if (id[2].Equals('-'))
+            {                
+                if (manager.authUser(id, password) == true)
+                {                    
+                    AlumniDashboard alumniDashboard = new AlumniDashboard();
+                    alumniDashboard.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    warning.Visible = true;
+                }
+            }
+            else {
+                if (manager.authAdmin(id, password) == true)
+                {
+                    AdminDasboard adminDashboard = new AdminDasboard();
+                    adminDashboard.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    warning.Visible = true;
+                }
+
+            }
+            
         }
     }
 }

@@ -217,6 +217,7 @@
             this.backButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.backButton.TabIndex = 21;
             this.backButton.TabStop = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // pictureBox11
             // 

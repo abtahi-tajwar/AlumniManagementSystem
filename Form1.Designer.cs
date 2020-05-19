@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.password = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.loginButton = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -41,6 +41,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.warning = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -77,20 +78,20 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "American Internation University Bangladesh";
             // 
-            // password
+            // txtPassword
             // 
-            this.password.BackColor = System.Drawing.Color.White;
-            this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.password.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.password.Location = new System.Drawing.Point(125, 431);
-            this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(332, 20);
-            this.password.TabIndex = 16;
-            this.password.Text = "Password";
-            this.password.Enter += new System.EventHandler(this.passwordReset);
-            this.password.Leave += new System.EventHandler(this.passwordPlaceholder);
+            this.txtPassword.BackColor = System.Drawing.Color.White;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
+            this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPassword.Location = new System.Drawing.Point(125, 431);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(332, 20);
+            this.txtPassword.TabIndex = 16;
+            this.txtPassword.Text = "Password";
+            this.txtPassword.Enter += new System.EventHandler(this.passwordReset);
+            this.txtPassword.Leave += new System.EventHandler(this.passwordPlaceholder);
             // 
             // pictureBox9
             // 
@@ -116,6 +117,7 @@
             this.loginButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.loginButton.TabIndex = 8;
             this.loginButton.TabStop = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             this.loginButton.MouseEnter += new System.EventHandler(this.LoginHover);
             this.loginButton.MouseLeave += new System.EventHandler(this.LoginMouseOut);
             // 
@@ -198,6 +200,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // warning
+            // 
+            this.warning.AutoSize = true;
+            this.warning.Location = new System.Drawing.Point(177, 489);
+            this.warning.Name = "warning";
+            this.warning.Size = new System.Drawing.Size(206, 17);
+            this.warning.TabIndex = 17;
+            this.warning.Text = "Please insert correct cridentials";
+            this.warning.Visible = false;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,7 +217,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1269, 630);
             this.ControlBox = false;
-            this.Controls.Add(this.password);
+            this.Controls.Add(this.warning);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.pictureBox9);
@@ -252,7 +265,8 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label warning;
     }
 }
 
