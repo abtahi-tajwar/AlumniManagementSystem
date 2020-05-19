@@ -45,7 +45,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.UserNameText = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -255,19 +255,19 @@
             this.pictureBox9.TabIndex = 15;
             this.pictureBox9.TabStop = false;
             // 
-            // label8
+            // UserNameText
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 16.25F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(943, 279);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(194, 38);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "David Gilmour";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.UserNameText.AutoSize = true;
+            this.UserNameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.UserNameText.Font = new System.Drawing.Font("Segoe UI", 16.25F);
+            this.UserNameText.ForeColor = System.Drawing.Color.White;
+            this.UserNameText.Location = new System.Drawing.Point(943, 279);
+            this.UserNameText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.UserNameText.Name = "UserNameText";
+            this.UserNameText.Size = new System.Drawing.Size(194, 38);
+            this.UserNameText.TabIndex = 16;
+            this.UserNameText.Text = "David Gilmour";
+            this.UserNameText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label9
             // 
@@ -448,7 +448,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.UserNameText);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -506,7 +506,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label UserNameText;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label10;

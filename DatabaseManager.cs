@@ -13,6 +13,7 @@ namespace CSFinalProject_University_
     {
         string connectionString;
         public static int Count = 0;
+        public static int EventCount = 0;
         Session session = new Session();
         public DatabaseManager() {
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\University\C#\Final\CSFinalProject(University)\CSFinalProject(University)\Database1.mdf;Integrated Security=True";
@@ -25,10 +26,33 @@ namespace CSFinalProject_University_
             Count = Convert.ToInt32(dt.Rows[0]["Count"]);
             cmd.Connection.Close();
 
+            //Event Count Init
+            EventCount = getLatestEventNumber();
+
+        }
+        //Function for making query and get data table
+        public DataTable Query(string sql)
+        {
+            SqlConnection conn = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Connection.Open();
+            DataTable dt = new DataTable();
+            dt.Load(cmd.ExecuteReader());
+
+            return dt;
+
+        }
+        //Function for making query to update data table
+        public int NonQuery(string sql)
+        {
+            SqlConnection conn = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Connection.Open();
+            return cmd.ExecuteNonQuery();
         }
         public void UpdateCount() {
             Count++;
-            string sql = "UPDATE AlumniCount SET Count='" + Count + "'";
+            string sql = "UPDATE AlumniCount SET Count='" + Count + "' WHERE ID = 0";
             SqlConnection conn = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.Connection.Open();
@@ -50,19 +74,42 @@ namespace CSFinalProject_University_
             }
             return (string)dt.Rows[0][col];
         }
-        public bool authUser(string email, string password) { 
+        public bool authUser(string id, string password) { 
 
-            string sql = string.Format("SELECT * FROM Alumni WHERE Email='{0}'", email);
+            string sql = string.Format("SELECT * FROM Alumni WHERE StudentID='{0}'", id);
+            SqlConnection conn = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Connection.Open();
+            DataTable dt = new DataTable();
+            dt.Load(cmd.ExecuteReader());            
+            Console.WriteLine("BB"+dt.ToString());
+            if (dt.Rows.Count > 0) {
+                if (password.Equals(dt.Rows[0]["Password"]))
+                {
+                    Session.id = Convert.ToInt32(dt.Rows[0]["Id"]);
+                    Session.createSession();
+                    return true;
+                }
+            }            
+            return false;
+        }
+        public bool authAdmin(string id, string password)
+        {
+            string sql = string.Format("SELECT * FROM Admin WHERE AdminID='{0}'", id);
             SqlConnection conn = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.Connection.Open();
             DataTable dt = new DataTable();
             dt.Load(cmd.ExecuteReader());
-
-            if (password.Equals(dt.Rows[0]["Password"])) {
-                Session.id = Convert.ToInt32(dt.Rows[0]["Id"]);
-                Session.createSession();
-                return true;
+            Console.WriteLine("BB" + dt.ToString());
+            if (dt.Rows.Count > 0)
+            {
+                if (password.Equals(dt.Rows[0]["Password"]))
+                {
+                    Session.id = Convert.ToInt32(dt.Rows[0]["Id"]);
+                    Session.createSession();
+                    return true;
+                }
             }
             return false;
         }
@@ -82,6 +129,22 @@ namespace CSFinalProject_University_
             }
             cmd.Connection.Close();
 
+        }
+        
+        public int getLatestEventNumber() {
+            int eventNumber;
+            DataTable dt = Query("SELECT * FROM AlumniCount WHERE Id = 1");            
+            eventNumber = Convert.ToInt32(dt.Rows[0]["Count"]);
+            return eventNumber;
+        }
+        public void updateEventNumber() {
+            EventCount++;
+            int result = NonQuery("UPDATE AlumniCount SET Count='" + EventCount + "' WHERE ID = 1");
+        }
+        public void createEvent(string eventDesc, string date)
+        {
+            NonQuery(string.Format("INSERT INTO Events (Id, EventName, EventDate, Perticipants) VALUES ({0}, '{1}', '{2}', {3})", EventCount, eventDesc, date, 0));
+            updateEventNumber();
         }
     }
 }

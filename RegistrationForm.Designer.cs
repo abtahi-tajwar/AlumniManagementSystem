@@ -55,193 +55,171 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(115, 121);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(22, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 17);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "User Name";
+            this.label1.Text = "Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(115, 60);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(22, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 17);
+            this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "University Id";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(115, 181);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(22, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(115, 231);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(22, 144);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 17);
+            this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Department";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(115, 278);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(22, 175);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 17);
+            this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Batch";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(561, 60);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(22, 211);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 17);
+            this.label6.Size = new System.Drawing.Size(66, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Blood Group";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(598, 121);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(22, 261);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 17);
+            this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 6;
             this.label7.Text = "Email";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(584, 180);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(22, 309);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 17);
+            this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 7;
             this.label8.Text = "Contact";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(544, 231);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(9, 350);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 17);
+            this.label9.Size = new System.Drawing.Size(75, 13);
             this.label9.TabIndex = 8;
             this.label9.Text = "Place of Work";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(544, 281);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(22, 387);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(113, 17);
+            this.label10.Size = new System.Drawing.Size(45, 13);
             this.label10.TabIndex = 9;
-            this.label10.Text = "Present Address";
+            this.label10.Text = "Address";
             // 
             // Nametxt
             // 
-            this.Nametxt.Location = new System.Drawing.Point(208, 121);
-            this.Nametxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Nametxt.Location = new System.Drawing.Point(85, 18);
             this.Nametxt.Multiline = true;
             this.Nametxt.Name = "Nametxt";
-            this.Nametxt.Size = new System.Drawing.Size(243, 24);
+            this.Nametxt.Size = new System.Drawing.Size(100, 20);
             this.Nametxt.TabIndex = 10;
             // 
             // Idtxt
             // 
-            this.Idtxt.Location = new System.Drawing.Point(208, 60);
-            this.Idtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Idtxt.Location = new System.Drawing.Point(85, 57);
             this.Idtxt.Name = "Idtxt";
-            this.Idtxt.Size = new System.Drawing.Size(243, 22);
+            this.Idtxt.Size = new System.Drawing.Size(100, 20);
             this.Idtxt.TabIndex = 11;
             // 
             // Passwordtxt
             // 
-            this.Passwordtxt.Location = new System.Drawing.Point(208, 177);
-            this.Passwordtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Passwordtxt.Location = new System.Drawing.Point(85, 101);
             this.Passwordtxt.Name = "Passwordtxt";
-            this.Passwordtxt.Size = new System.Drawing.Size(243, 22);
+            this.Passwordtxt.Size = new System.Drawing.Size(100, 20);
             this.Passwordtxt.TabIndex = 12;
             // 
             // Depttxt
             // 
-            this.Depttxt.Location = new System.Drawing.Point(208, 231);
-            this.Depttxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Depttxt.Location = new System.Drawing.Point(85, 144);
             this.Depttxt.Name = "Depttxt";
-            this.Depttxt.Size = new System.Drawing.Size(243, 22);
+            this.Depttxt.Size = new System.Drawing.Size(100, 20);
             this.Depttxt.TabIndex = 13;
             // 
             // batchtxt
             // 
-            this.batchtxt.Location = new System.Drawing.Point(208, 278);
-            this.batchtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.batchtxt.Location = new System.Drawing.Point(85, 175);
             this.batchtxt.Name = "batchtxt";
-            this.batchtxt.Size = new System.Drawing.Size(243, 22);
+            this.batchtxt.Size = new System.Drawing.Size(100, 20);
             this.batchtxt.TabIndex = 14;
             // 
             // bloodtxt
             // 
-            this.bloodtxt.Location = new System.Drawing.Point(670, 60);
-            this.bloodtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bloodtxt.Location = new System.Drawing.Point(85, 211);
             this.bloodtxt.Name = "bloodtxt";
-            this.bloodtxt.Size = new System.Drawing.Size(245, 22);
+            this.bloodtxt.Size = new System.Drawing.Size(100, 20);
             this.bloodtxt.TabIndex = 15;
             // 
             // Emailtxt
             // 
-            this.Emailtxt.Location = new System.Drawing.Point(670, 121);
-            this.Emailtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Emailtxt.Location = new System.Drawing.Point(85, 261);
             this.Emailtxt.Name = "Emailtxt";
-            this.Emailtxt.Size = new System.Drawing.Size(245, 22);
+            this.Emailtxt.Size = new System.Drawing.Size(100, 20);
             this.Emailtxt.TabIndex = 16;
             // 
             // Contxt
             // 
-            this.Contxt.Location = new System.Drawing.Point(670, 180);
-            this.Contxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Contxt.Location = new System.Drawing.Point(85, 309);
             this.Contxt.Name = "Contxt";
-            this.Contxt.Size = new System.Drawing.Size(245, 22);
+            this.Contxt.Size = new System.Drawing.Size(100, 20);
             this.Contxt.TabIndex = 17;
             // 
             // Placetxt
             // 
-            this.Placetxt.Location = new System.Drawing.Point(670, 228);
-            this.Placetxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Placetxt.Location = new System.Drawing.Point(85, 347);
             this.Placetxt.Multiline = true;
             this.Placetxt.Name = "Placetxt";
-            this.Placetxt.Size = new System.Drawing.Size(245, 24);
+            this.Placetxt.Size = new System.Drawing.Size(100, 20);
             this.Placetxt.TabIndex = 18;
             // 
             // Addresstxt
             // 
-            this.Addresstxt.Location = new System.Drawing.Point(670, 278);
-            this.Addresstxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Addresstxt.Location = new System.Drawing.Point(85, 387);
             this.Addresstxt.Multiline = true;
             this.Addresstxt.Name = "Addresstxt";
-            this.Addresstxt.Size = new System.Drawing.Size(245, 24);
+            this.Addresstxt.Size = new System.Drawing.Size(100, 20);
             this.Addresstxt.TabIndex = 19;
             // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(733, 435);
-            this.backbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backbtn.Location = new System.Drawing.Point(550, 397);
             this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(103, 50);
+            this.backbtn.Size = new System.Drawing.Size(77, 41);
             this.backbtn.TabIndex = 20;
             this.backbtn.Text = "Back";
             this.backbtn.UseVisualStyleBackColor = true;
@@ -249,10 +227,9 @@
             // 
             // savebtn
             // 
-            this.savebtn.Location = new System.Drawing.Point(882, 435);
-            this.savebtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.savebtn.Location = new System.Drawing.Point(661, 397);
             this.savebtn.Name = "savebtn";
-            this.savebtn.Size = new System.Drawing.Size(108, 50);
+            this.savebtn.Size = new System.Drawing.Size(81, 41);
             this.savebtn.TabIndex = 21;
             this.savebtn.Text = "Save";
             this.savebtn.UseVisualStyleBackColor = true;
@@ -260,9 +237,9 @@
             // 
             // RegistrationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.savebtn);
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.Addresstxt);
@@ -285,7 +262,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RegistrationForm";
             this.Text = "RegistrationForm";
             this.Load += new System.EventHandler(this.RegistrationForm_Load);
