@@ -33,10 +33,6 @@ namespace CSFinalProject_University_
             verified = Convert.ToInt32(database.getAlumni("Verified", id));
             
         }
-        public static void clearSession()
-        {
-            id = -1;
-        }
     }
     
 }

@@ -104,7 +104,6 @@
     <Compile Include="EventForm.Designer.cs">
       <DependentUpon>EventForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Events.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

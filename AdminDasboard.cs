@@ -27,5 +27,10 @@ namespace CSFinalProject_University_
             databaseManager.createEvent(EventText.Text, date.ToString("MM/dd/yyyy HH:mm:ss"));
             EventText.Text = "";
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

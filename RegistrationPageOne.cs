@@ -344,19 +344,14 @@ namespace CSFinalProject_University_
             mother = MotherName.Text;
             work = Work.Text;
 
-           // if (fname == "" || lname == "" || sid == "" || age == "" || pyear == "" || father == "" || mother == "")
-           if(!string.IsNullOrEmpty(fname) && !string.IsNullOrEmpty(lname) && !string.IsNullOrEmpty(sid) && !string.IsNullOrEmpty(age)
-                && !string.IsNullOrEmpty(pyear) && !string.IsNullOrEmpty(present_address) && !string.IsNullOrEmpty(permanent_address)
-                && !string.IsNullOrEmpty(father) && !string.IsNullOrEmpty(mother) && !string.IsNullOrEmpty(work))
+            if (fname == "" || lname == "" || sid == "" || age == "" || pyear == "" || father == "" || mother == "")
             {
                 warning.Visible = true;
+            }
+            else {
                 this.Hide();
                 RegistrationFormTwo rFormTwo = new RegistrationFormTwo(fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work);
                 rFormTwo.Show();
-            }
-            else 
-            {
-                MessageBox.Show("Please fill up all info..");
             }
 
         }

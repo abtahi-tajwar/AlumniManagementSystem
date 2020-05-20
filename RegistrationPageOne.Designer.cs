@@ -85,7 +85,7 @@
             this.firstName.Margin = new System.Windows.Forms.Padding(4);
             this.firstName.Name = "firstName";
             this.firstName.Size = new System.Drawing.Size(396, 22);
-            this.firstName.TabIndex = 1;
+            this.firstName.TabIndex = 2;
             this.firstName.Text = "First Name";
             this.firstName.Enter += new System.EventHandler(this.firstName_Enter);
             this.firstName.Leave += new System.EventHandler(this.firstName_Leave);
@@ -99,7 +99,7 @@
             this.lastName.Margin = new System.Windows.Forms.Padding(4);
             this.lastName.Name = "lastName";
             this.lastName.Size = new System.Drawing.Size(396, 22);
-            this.lastName.TabIndex = 2;
+            this.lastName.TabIndex = 4;
             this.lastName.Text = "Last Name";
             this.lastName.Enter += new System.EventHandler(this.lastName_Enter);
             this.lastName.Leave += new System.EventHandler(this.lastName_Leave);
@@ -113,7 +113,7 @@
             this.StudentID.Margin = new System.Windows.Forms.Padding(4);
             this.StudentID.Name = "StudentID";
             this.StudentID.Size = new System.Drawing.Size(396, 22);
-            this.StudentID.TabIndex = 3;
+            this.StudentID.TabIndex = 6;
             this.StudentID.Text = "Student ID";
             this.StudentID.Enter += new System.EventHandler(this.StudentID_Enter);
             this.StudentID.Leave += new System.EventHandler(this.StudentID_Leave);
@@ -127,7 +127,7 @@
             this.Age.Margin = new System.Windows.Forms.Padding(4);
             this.Age.Name = "Age";
             this.Age.Size = new System.Drawing.Size(193, 22);
-            this.Age.TabIndex = 4;
+            this.Age.TabIndex = 8;
             this.Age.Text = "Age";
             this.Age.Enter += new System.EventHandler(this.Age_Enter);
             this.Age.Leave += new System.EventHandler(this.Age_Leave);
@@ -140,7 +140,7 @@
             this.PassingYear.Margin = new System.Windows.Forms.Padding(4);
             this.PassingYear.Name = "PassingYear";
             this.PassingYear.Size = new System.Drawing.Size(193, 22);
-            this.PassingYear.TabIndex = 5;
+            this.PassingYear.TabIndex = 10;
             this.PassingYear.Text = "Passing Year";
             this.PassingYear.Enter += new System.EventHandler(this.PassingYear_Enter);
             this.PassingYear.Leave += new System.EventHandler(this.PassingYear_Leave);
@@ -153,7 +153,7 @@
             this.PresentAddress.Margin = new System.Windows.Forms.Padding(4);
             this.PresentAddress.Name = "PresentAddress";
             this.PresentAddress.Size = new System.Drawing.Size(396, 22);
-            this.PresentAddress.TabIndex = 6;
+            this.PresentAddress.TabIndex = 12;
             this.PresentAddress.Text = "Present Address";
             this.PresentAddress.Enter += new System.EventHandler(this.PresentAddress_Enter);
             this.PresentAddress.Leave += new System.EventHandler(this.PresentAddress_Leave);
@@ -166,7 +166,7 @@
             this.PermanentAddress.Margin = new System.Windows.Forms.Padding(4);
             this.PermanentAddress.Name = "PermanentAddress";
             this.PermanentAddress.Size = new System.Drawing.Size(396, 22);
-            this.PermanentAddress.TabIndex = 7;
+            this.PermanentAddress.TabIndex = 14;
             this.PermanentAddress.Text = "Permanent Address";
             this.PermanentAddress.Enter += new System.EventHandler(this.PermanentAddress_Enter);
             this.PermanentAddress.Leave += new System.EventHandler(this.PermanentAddress_Leave);
@@ -179,7 +179,7 @@
             this.FatherName.Margin = new System.Windows.Forms.Padding(4);
             this.FatherName.Name = "FatherName";
             this.FatherName.Size = new System.Drawing.Size(396, 22);
-            this.FatherName.TabIndex = 8;
+            this.FatherName.TabIndex = 16;
             this.FatherName.Text = "Father\'s Name";
             this.FatherName.Enter += new System.EventHandler(this.FatherName_Enter);
             this.FatherName.Leave += new System.EventHandler(this.FatherName_Leave);
@@ -192,7 +192,7 @@
             this.MotherName.Margin = new System.Windows.Forms.Padding(4);
             this.MotherName.Name = "MotherName";
             this.MotherName.Size = new System.Drawing.Size(396, 22);
-            this.MotherName.TabIndex = 9;
+            this.MotherName.TabIndex = 18;
             this.MotherName.Text = "Mother\'s Name";
             this.MotherName.Enter += new System.EventHandler(this.MotherName_Enter);
             this.MotherName.Leave += new System.EventHandler(this.MotherName_Leave);
@@ -205,7 +205,7 @@
             this.Work.Margin = new System.Windows.Forms.Padding(4);
             this.Work.Name = "Work";
             this.Work.Size = new System.Drawing.Size(827, 22);
-            this.Work.TabIndex = 10;
+            this.Work.TabIndex = 20;
             this.Work.Text = "Add Work";
             this.Work.Enter += new System.EventHandler(this.Work_Enter);
             this.Work.Leave += new System.EventHandler(this.Work_Leave);
