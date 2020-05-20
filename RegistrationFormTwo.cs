@@ -13,6 +13,11 @@ namespace CSFinalProject_University_
     public partial class RegistrationFormTwo : Form
     {
         private string fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work;
+        
+        private void PasswordText_Click(object sender, EventArgs e)
+        {
+            PasswordText.Clear();
+        }
 
         private void PasswordText_Leave(object sender, EventArgs e)
         {
@@ -61,10 +66,7 @@ namespace CSFinalProject_University_
             }
         }
 
-        private void PasswordText_Click(object sender, EventArgs e)
-        {
-            PasswordText.Clear();
-        }
+       
 
         private void EmailText_Click(object sender, EventArgs e)
         {
