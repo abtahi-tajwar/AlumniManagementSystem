@@ -87,7 +87,7 @@
             this.firstName.Size = new System.Drawing.Size(396, 22);
             this.firstName.TabIndex = 2;
             this.firstName.Text = "First Name";
-            this.firstName.Enter += new System.EventHandler(this.firstName_Enter);
+            this.firstName.Click += new System.EventHandler(this.firstName_Click);
             this.firstName.Leave += new System.EventHandler(this.firstName_Leave);
             this.firstName.Validating += new System.ComponentModel.CancelEventHandler(this.firstName_Validating);
             // 
@@ -101,7 +101,7 @@
             this.lastName.Size = new System.Drawing.Size(396, 22);
             this.lastName.TabIndex = 4;
             this.lastName.Text = "Last Name";
-            this.lastName.Enter += new System.EventHandler(this.lastName_Enter);
+            this.lastName.Click += new System.EventHandler(this.lastName_Click);
             this.lastName.Leave += new System.EventHandler(this.lastName_Leave);
             this.lastName.Validating += new System.ComponentModel.CancelEventHandler(this.lastName_Validating);
             // 
@@ -115,7 +115,7 @@
             this.StudentID.Size = new System.Drawing.Size(396, 22);
             this.StudentID.TabIndex = 6;
             this.StudentID.Text = "Student ID";
-            this.StudentID.Enter += new System.EventHandler(this.StudentID_Enter);
+            this.StudentID.Click += new System.EventHandler(this.StudentID_Click);
             this.StudentID.Leave += new System.EventHandler(this.StudentID_Leave);
             this.StudentID.Validating += new System.ComponentModel.CancelEventHandler(this.StudentID_Validating);
             // 
@@ -129,7 +129,7 @@
             this.Age.Size = new System.Drawing.Size(193, 22);
             this.Age.TabIndex = 8;
             this.Age.Text = "Age";
-            this.Age.Enter += new System.EventHandler(this.Age_Enter);
+            this.Age.Click += new System.EventHandler(this.Age_Click);
             this.Age.Leave += new System.EventHandler(this.Age_Leave);
             // 
             // PassingYear
@@ -142,7 +142,7 @@
             this.PassingYear.Size = new System.Drawing.Size(193, 22);
             this.PassingYear.TabIndex = 10;
             this.PassingYear.Text = "Passing Year";
-            this.PassingYear.Enter += new System.EventHandler(this.PassingYear_Enter);
+            this.PassingYear.Click += new System.EventHandler(this.PassingYear_Click);
             this.PassingYear.Leave += new System.EventHandler(this.PassingYear_Leave);
             // 
             // PresentAddress
@@ -155,7 +155,7 @@
             this.PresentAddress.Size = new System.Drawing.Size(396, 22);
             this.PresentAddress.TabIndex = 12;
             this.PresentAddress.Text = "Present Address";
-            this.PresentAddress.Enter += new System.EventHandler(this.PresentAddress_Enter);
+            this.PresentAddress.Click += new System.EventHandler(this.PresentAddress_Click);
             this.PresentAddress.Leave += new System.EventHandler(this.PresentAddress_Leave);
             // 
             // PermanentAddress
@@ -168,7 +168,7 @@
             this.PermanentAddress.Size = new System.Drawing.Size(396, 22);
             this.PermanentAddress.TabIndex = 14;
             this.PermanentAddress.Text = "Permanent Address";
-            this.PermanentAddress.Enter += new System.EventHandler(this.PermanentAddress_Enter);
+            this.PermanentAddress.Click += new System.EventHandler(this.PermanentAddress_Click);
             this.PermanentAddress.Leave += new System.EventHandler(this.PermanentAddress_Leave);
             // 
             // FatherName
@@ -181,7 +181,7 @@
             this.FatherName.Size = new System.Drawing.Size(396, 22);
             this.FatherName.TabIndex = 16;
             this.FatherName.Text = "Father\'s Name";
-            this.FatherName.Enter += new System.EventHandler(this.FatherName_Enter);
+            this.FatherName.Click += new System.EventHandler(this.FatherName_Click);
             this.FatherName.Leave += new System.EventHandler(this.FatherName_Leave);
             // 
             // MotherName
@@ -194,7 +194,7 @@
             this.MotherName.Size = new System.Drawing.Size(396, 22);
             this.MotherName.TabIndex = 18;
             this.MotherName.Text = "Mother\'s Name";
-            this.MotherName.Enter += new System.EventHandler(this.MotherName_Enter);
+            this.MotherName.Click += new System.EventHandler(this.MotherName_Click);
             this.MotherName.Leave += new System.EventHandler(this.MotherName_Leave);
             // 
             // Work
@@ -207,7 +207,7 @@
             this.Work.Size = new System.Drawing.Size(827, 22);
             this.Work.TabIndex = 20;
             this.Work.Text = "Add Work";
-            this.Work.Enter += new System.EventHandler(this.Work_Enter);
+            this.Work.Click += new System.EventHandler(this.Work_Click);
             this.Work.Leave += new System.EventHandler(this.Work_Leave);
             // 
             // pictureBox14

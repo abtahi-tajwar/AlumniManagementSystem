@@ -12,87 +12,60 @@ namespace CSFinalProject_University_
 {
     public partial class RegistrationPageOne : Form
     {
-        bool place = true;
+       // bool place = true;
         private string fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work;
 
-        private void Age_Enter(object sender, EventArgs e)
+      
+        private void Age_Click(object sender, EventArgs e)
         {
-            if (Age.Text == "Age")
-            {
-                if (place)
-                {
-                    Age.Text = "";
-                    place = false;
-                }
-            }
+            Age.Clear();
         }
         private void Age_Leave(object sender, EventArgs e)
         {
             if (Age.Text == "")
             {
                 Age.Text = "Age";
-                place = true;
+               //lace = true;
             }
 
         }
-        private void firstName_Enter(object sender, EventArgs e)
+        private void firstName_Click(object sender, EventArgs e)
         {
-            if (firstName.Text == "First Name")
-            {
-                if (place)
-                {
-                    firstName.Text = "";
-                    place = false;
-                }
-
-            }
-
+            firstName.Clear();
         }
+        
         private void firstName_Leave(object sender, EventArgs e)
         {
             if (firstName.Text == "")
             {
-                firstName.Text = "First Name";
-                place = true;
+               firstName.Text= "FirstName";
+               // firstName.Text = null;
+                
+               //lace = true;
             }
 
         }
 
-        private void lastName_Enter(object sender, EventArgs e)
+       
+        private void lastName_Click(object sender, EventArgs e)
         {
-            if (lastName.Text == "Last Name")
-            {
-                if (place)
-                {
-                    lastName.Text = "";
-                    place = false;
-                }
-
-            }
-
+            lastName.Clear();
         }
 
         private void lastName_Leave(object sender, EventArgs e)
         {
             if (lastName.Text == "")
             {
+                
                 lastName.Text = "Last Name";
-                place = true;
+                
             }
         }
 
-        private void StudentID_Enter(object sender, EventArgs e)
+       
+        private void StudentID_Click(object sender, EventArgs e)
         {
-            if (StudentID.Text == "Student ID")
-            {
-                if (place)
-                {
-                    StudentID.Text = "";
-                    place = false;
-                }
-
-            }
-
+            StudentID.Clear();
         }
 
         private void StudentID_Leave(object sender, EventArgs e)
@@ -100,42 +73,28 @@ namespace CSFinalProject_University_
             if (StudentID.Text == "")
             {
                 StudentID.Text = "Student ID";
-                place = true;
+                
             }
         }
 
-        private void PassingYear_Enter(object sender, EventArgs e)
+       
+        private void PassingYear_Click(object sender, EventArgs e)
         {
-            if (PassingYear.Text == "Passing Year")
-            {
-                if (place)
-                {
-                    PassingYear.Text = "";
-                    place = false;
-                }
-
-            }
-
+            PassingYear.Clear();
         }
         private void PassingYear_Leave(object sender, EventArgs e)
         {
             if (PassingYear.Text == "")
             {
                 PassingYear.Text = "Passing Year";
-                place = true;
+                
             }
         }
 
-        private void PresentAddress_Enter(object sender, EventArgs e)
+        
+        private void PresentAddress_Click(object sender, EventArgs e)
         {
-            if (PresentAddress.Text == "Present Address")
-            {
-                if (place)
-                {
-                    PresentAddress.Text = "";
-                    place = false;
-                }
-            }
+            PresentAddress.Clear();
         }
 
         private void PresentAddress_Leave(object sender, EventArgs e)
@@ -143,40 +102,28 @@ namespace CSFinalProject_University_
             if (PresentAddress.Text == "")
             {
                 PresentAddress.Text = "Present Address";
-                place = true;
+                
             }
         }
 
-        private void PermanentAddress_Enter(object sender, EventArgs e)
+        
+        private void PermanentAddress_Click(object sender, EventArgs e)
         {
-            if (PermanentAddress.Text == "Permanent Address")
-            {
-                if (place)
-                {
-                    PermanentAddress.Text = "";
-                    place = false;
-                }
-            }
+            PermanentAddress.Clear();
         }
         private void PermanentAddress_Leave(object sender, EventArgs e)
         {
             if (PermanentAddress.Text == "")
             {
                 PermanentAddress.Text = "Permanent Address";
-                place = true;
+                
             }
         }
 
-        private void FatherName_Enter(object sender, EventArgs e)
+       
+        private void FatherName_Click(object sender, EventArgs e)
         {
-            if (FatherName.Text == "Father's Name")
-            {
-                if (place)
-                {
-                    FatherName.Text = "";
-                    place = false;
-                }
-            }
+            FatherName.Clear();
         }
 
         private void FatherName_Leave(object sender, EventArgs e)
@@ -184,20 +131,14 @@ namespace CSFinalProject_University_
             if (FatherName.Text == "")
             {
                 FatherName.Text = "Father's Name";
-                place = true;
+                
             }
         }
 
-        private void MotherName_Enter(object sender, EventArgs e)
+       
+        private void MotherName_Click(object sender, EventArgs e)
         {
-            if (MotherName.Text == "Mother's Name")
-            {
-                if (place)
-                {
-                    FatherName.Text = "";
-                    place = false;
-                }
-            }
+            MotherName.Clear();
         }
 
         private void MotherName_Leave(object sender, EventArgs e)
@@ -205,20 +146,13 @@ namespace CSFinalProject_University_
             if (MotherName.Text == "")
             {
                 MotherName.Text = "Mother's Name";
-                place = true;
+                
             }
         }
 
-        private void Work_Enter(object sender, EventArgs e)
+        private void Work_Click(object sender, EventArgs e)
         {
-            if (Work.Text == "Add Work")
-            {
-                if (place)
-                {
-                    Work.Text = "";
-                    place = false;
-                }
-            }
+            Work.Clear();
         }
 
         private void Work_Leave(object sender, EventArgs e)
@@ -226,7 +160,7 @@ namespace CSFinalProject_University_
             if (Work.Text == "")
             {
                 Work.Text = "Add Work";
-                place = true;
+               
             }
         }
 
@@ -242,7 +176,6 @@ namespace CSFinalProject_University_
 
         private void StudentID_Validating(object sender, CancelEventArgs e)
         {
-            if (place == true)
             { var text = (sender as TextBox).Text;
                 if (String.IsNullOrEmpty(text))
                 {
@@ -275,7 +208,7 @@ namespace CSFinalProject_University_
             }
         }
 
-       // if(string.IsNullOrEmpty(firstName.Text))
+     
         
         private void firstName_Validating(object sender, CancelEventArgs e)
         {
