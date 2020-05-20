@@ -32,7 +32,8 @@ namespace CSFinalProject_University_
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "Student ID") { 
+            if (txtUsername.Text == "Student ID") 
+            { 
                 
             }
         }

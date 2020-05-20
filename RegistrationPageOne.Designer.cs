@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationPageOne));
             this.firstName = new System.Windows.Forms.TextBox();
             this.lastName = new System.Windows.Forms.TextBox();
@@ -54,6 +55,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.warning = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backButton)).BeginInit();
@@ -68,6 +72,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             this.SuspendLayout();
             // 
             // firstName
@@ -80,6 +87,9 @@
             this.firstName.Size = new System.Drawing.Size(396, 22);
             this.firstName.TabIndex = 1;
             this.firstName.Text = "First Name";
+            this.firstName.Enter += new System.EventHandler(this.firstName_Enter);
+            this.firstName.Leave += new System.EventHandler(this.firstName_Leave);
+            this.firstName.Validating += new System.ComponentModel.CancelEventHandler(this.firstName_Validating);
             // 
             // lastName
             // 
@@ -91,6 +101,9 @@
             this.lastName.Size = new System.Drawing.Size(396, 22);
             this.lastName.TabIndex = 2;
             this.lastName.Text = "Last Name";
+            this.lastName.Enter += new System.EventHandler(this.lastName_Enter);
+            this.lastName.Leave += new System.EventHandler(this.lastName_Leave);
+            this.lastName.Validating += new System.ComponentModel.CancelEventHandler(this.lastName_Validating);
             // 
             // StudentID
             // 
@@ -102,6 +115,9 @@
             this.StudentID.Size = new System.Drawing.Size(396, 22);
             this.StudentID.TabIndex = 3;
             this.StudentID.Text = "Student ID";
+            this.StudentID.Enter += new System.EventHandler(this.StudentID_Enter);
+            this.StudentID.Leave += new System.EventHandler(this.StudentID_Leave);
+            this.StudentID.Validating += new System.ComponentModel.CancelEventHandler(this.StudentID_Validating);
             // 
             // Age
             // 
@@ -113,6 +129,8 @@
             this.Age.Size = new System.Drawing.Size(193, 22);
             this.Age.TabIndex = 4;
             this.Age.Text = "Age";
+            this.Age.Enter += new System.EventHandler(this.Age_Enter);
+            this.Age.Leave += new System.EventHandler(this.Age_Leave);
             // 
             // PassingYear
             // 
@@ -124,6 +142,8 @@
             this.PassingYear.Size = new System.Drawing.Size(193, 22);
             this.PassingYear.TabIndex = 5;
             this.PassingYear.Text = "Passing Year";
+            this.PassingYear.Enter += new System.EventHandler(this.PassingYear_Enter);
+            this.PassingYear.Leave += new System.EventHandler(this.PassingYear_Leave);
             // 
             // PresentAddress
             // 
@@ -135,6 +155,8 @@
             this.PresentAddress.Size = new System.Drawing.Size(396, 22);
             this.PresentAddress.TabIndex = 6;
             this.PresentAddress.Text = "Present Address";
+            this.PresentAddress.Enter += new System.EventHandler(this.PresentAddress_Enter);
+            this.PresentAddress.Leave += new System.EventHandler(this.PresentAddress_Leave);
             // 
             // PermanentAddress
             // 
@@ -146,6 +168,8 @@
             this.PermanentAddress.Size = new System.Drawing.Size(396, 22);
             this.PermanentAddress.TabIndex = 7;
             this.PermanentAddress.Text = "Permanent Address";
+            this.PermanentAddress.Enter += new System.EventHandler(this.PermanentAddress_Enter);
+            this.PermanentAddress.Leave += new System.EventHandler(this.PermanentAddress_Leave);
             // 
             // FatherName
             // 
@@ -157,6 +181,8 @@
             this.FatherName.Size = new System.Drawing.Size(396, 22);
             this.FatherName.TabIndex = 8;
             this.FatherName.Text = "Father\'s Name";
+            this.FatherName.Enter += new System.EventHandler(this.FatherName_Enter);
+            this.FatherName.Leave += new System.EventHandler(this.FatherName_Leave);
             // 
             // MotherName
             // 
@@ -168,6 +194,8 @@
             this.MotherName.Size = new System.Drawing.Size(396, 22);
             this.MotherName.TabIndex = 9;
             this.MotherName.Text = "Mother\'s Name";
+            this.MotherName.Enter += new System.EventHandler(this.MotherName_Enter);
+            this.MotherName.Leave += new System.EventHandler(this.MotherName_Leave);
             // 
             // Work
             // 
@@ -179,6 +207,8 @@
             this.Work.Size = new System.Drawing.Size(827, 22);
             this.Work.TabIndex = 10;
             this.Work.Text = "Add Work";
+            this.Work.Enter += new System.EventHandler(this.Work_Enter);
+            this.Work.Leave += new System.EventHandler(this.Work_Leave);
             // 
             // pictureBox14
             // 
@@ -349,6 +379,18 @@
             this.warning.Text = "Warrning:  Please fill out everything with address and work";
             this.warning.Visible = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
+            // 
             // RegistrationPageOne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -397,6 +439,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,5 +474,8 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label warning;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
     }
 }
