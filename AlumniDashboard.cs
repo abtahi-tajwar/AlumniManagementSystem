@@ -12,13 +12,12 @@ namespace CSFinalProject_University_
 {
     public partial class AlumniDashboard : Form
     {
-        Session session;
         DatabaseManager manager;
         public AlumniDashboard()
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-
+            
             
 
         }
@@ -48,5 +47,8 @@ namespace CSFinalProject_University_
             GoingTrue.Visible = true;
             GoingFalse.Visible = false;
         }
+        
+        //Rubaia Apu Code
+        
     }
 }
