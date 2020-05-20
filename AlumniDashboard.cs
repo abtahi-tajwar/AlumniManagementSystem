@@ -17,7 +17,29 @@ namespace CSFinalProject_University_
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            
+            //Rubaia Apu Code //
+
+            manager = new DatabaseManager();
+
+            UserNameText.Text = Session.fname + " " + Session.lname;
+            SubtitleText.Text = Session.subtitle;
+            EmailText.Text = Session.email;
+            DetailsText.Text = Session.desc;
+            EventNameText.Text = manager.getLastEvent("name");
+            EventDateText.Text = manager.getLastEvent("date");
+            profilePicture.ImageLocation = Session.picture;
+            profilePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+
+
+            if (manager.checkEventGoing(Session.id))
+            {
+                GoingTrue.Visible = true;
+            }
+            else {
+                GoingFalse.Visible = false;
+            }
+
+            ////////////////////
             
 
         }
@@ -47,8 +69,31 @@ namespace CSFinalProject_University_
             GoingTrue.Visible = true;
             GoingFalse.Visible = false;
         }
-        
+
         //Rubaia Apu Code
+        //Settings Icon Click
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            AlumniSettings settings = new AlumniSettings();
+            settings.Show();
+            this.Hide();
+        }
+        /////////////////////
+
+        //Change profile picture button
+        private void changePicture_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            Session.picture = openFileDialog1.FileName;
+
+            profilePicture.ImageLocation = Session.picture;
+            profilePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            manager.updateAlumni(Session.id, "ProfilePicture", Session.picture);
+        }
         
+
+
+
     }
 }

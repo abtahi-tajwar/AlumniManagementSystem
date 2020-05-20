@@ -384,7 +384,7 @@
         ADnyAyBHfgDkyA+AmNkDuiBwHJtcPiEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="profilePicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ8AAACfCAYAAADnGwvgAAAABGdBTUEAALGPC/xhBQAA5txJREFUeF7M
         /XdXXFm27Yvqw5xMGbwLB0FEEATeew8ChBACCSSEQHjvvQcBQkjIe6XPrMrMsruqtr33tva+TX+9z0VI
@@ -1375,7 +1375,7 @@
         9AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="changePicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAhpJREFUWEe1
         VrtKxEAUzSeIrYIW2ggudqKF2qmFDwQrsdNOLGxsBNMKQjTBSmTt9w9stBSbtRKstEgUq7VMthlzJhmY
@@ -1570,4 +1570,7 @@
         zPkf12EHER0k94cAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

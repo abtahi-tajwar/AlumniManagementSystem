@@ -130,6 +130,10 @@ namespace CSFinalProject_University_
             cmd.Connection.Close();
 
         }
+        public void updateAlumni(int id, string feature, string value)
+        {
+            NonQuery("UPDATE Alumni SET " + feature + " = '" + value + "' WHERE Id = " + id);
+        }
 
         /////////
         //Events
