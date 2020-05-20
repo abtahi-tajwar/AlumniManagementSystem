@@ -14,6 +14,70 @@ namespace CSFinalProject_University_
     {
         private string fname, lname, sid, age, pyear, present_address, permanent_address, father, mother, work;
 
+        private void PasswordText_Leave(object sender, EventArgs e)
+        {
+            if(PasswordText.Text=="")
+            {
+                PasswordText.Text = "Enter Password";
+            }
+        }
+
+        private void CPasswordText_Click(object sender, EventArgs e)
+        {
+            CPasswordText.Clear();
+        }
+
+        private void CPasswordText_Leave(object sender, EventArgs e)
+        {
+            if(CPasswordText.Text=="")
+            {
+                CPasswordText.Text = "Confirm Password";
+            }
+        }
+
+        private void SubtitleText_Click(object sender, EventArgs e)
+        {
+            SubtitleText.Clear();
+        }
+
+        private void SubtitleText_Leave(object sender, EventArgs e)
+        {
+            if(SubtitleText.Text=="")
+            {
+                SubtitleText.Text = "Profile Subtitle";
+            }
+        }
+
+        private void DescriptionText_Click(object sender, EventArgs e)
+        {
+            DescriptionText.Clear();
+        }
+
+        private void DescriptionText_Leave(object sender, EventArgs e)
+        {
+            if(DescriptionText.Text=="")
+            {
+                DescriptionText.Text = "Description";
+            }
+        }
+
+        private void PasswordText_Click(object sender, EventArgs e)
+        {
+            PasswordText.Clear();
+        }
+
+        private void EmailText_Click(object sender, EventArgs e)
+        {
+            EmailText.Clear();
+        }
+        private void EmailText_Leave(object sender, EventArgs e)
+        {
+            if(EmailText.Text=="")
+            {
+                EmailText.Text = "Enter Email";
+            }
+        }
+
 
         //Registration form click back button
         private void BackButton_Click(object sender, EventArgs e)

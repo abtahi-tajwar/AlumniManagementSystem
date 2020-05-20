@@ -65,6 +65,8 @@
             this.EmailText.Size = new System.Drawing.Size(827, 22);
             this.EmailText.TabIndex = 22;
             this.EmailText.Text = "Enter Email";
+            this.EmailText.Click += new System.EventHandler(this.EmailText_Click);
+            this.EmailText.Leave += new System.EventHandler(this.EmailText_Leave);
             // 
             // pictureBox11
             // 
@@ -97,6 +99,8 @@
             this.CPasswordText.Size = new System.Drawing.Size(396, 22);
             this.CPasswordText.TabIndex = 26;
             this.CPasswordText.Text = "Confirm Password";
+            this.CPasswordText.Click += new System.EventHandler(this.CPasswordText_Click);
+            this.CPasswordText.Leave += new System.EventHandler(this.CPasswordText_Leave);
             // 
             // pictureBox3
             // 
@@ -119,6 +123,8 @@
             this.PasswordText.Size = new System.Drawing.Size(396, 22);
             this.PasswordText.TabIndex = 24;
             this.PasswordText.Text = "Enter Password";
+            this.PasswordText.Click += new System.EventHandler(this.PasswordText_Click);
+            this.PasswordText.Leave += new System.EventHandler(this.PasswordText_Leave);
             // 
             // pictureBox2
             // 
@@ -141,6 +147,8 @@
             this.SubtitleText.Size = new System.Drawing.Size(827, 22);
             this.SubtitleText.TabIndex = 28;
             this.SubtitleText.Text = "Profile Subtitle";
+            this.SubtitleText.Click += new System.EventHandler(this.SubtitleText_Click);
+            this.SubtitleText.Leave += new System.EventHandler(this.SubtitleText_Leave);
             // 
             // pictureBox4
             // 
@@ -174,6 +182,8 @@
             this.DescriptionText.Size = new System.Drawing.Size(791, 22);
             this.DescriptionText.TabIndex = 30;
             this.DescriptionText.Text = "Description";
+            this.DescriptionText.Click += new System.EventHandler(this.DescriptionText_Click);
+            this.DescriptionText.Leave += new System.EventHandler(this.DescriptionText_Leave);
             // 
             // Register
             // 
