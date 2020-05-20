@@ -18,24 +18,8 @@ namespace CSFinalProject_University_
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            session = new Session();
-            manager = new DatabaseManager();
-            UserNameText.Text = Session.fname + " " + Session.lname;
-            SubtitleText.Text = Session.subtitle;
-            EmailText.Text = Session.email;
-            DetailsText.Text = Session.desc;
 
-            Console.WriteLine(manager.getLastEvent("name"));
-            Console.WriteLine(manager.getLastEvent("date"));
-            Console.WriteLine(manager.checkEventGoing(Session.id));
-
-            if (manager.checkEventGoing(Session.id) == true)
-            {
-                GoingTrue.Visible = true;
-            }
-            else {
-                GoingFalse.Visible = true;
-            }
+            
 
         }
 
