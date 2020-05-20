@@ -35,16 +35,18 @@ namespace CSFinalProject_University_
         }
         
         private void firstName_Leave(object sender, EventArgs e)
-        {
-            if (firstName.Text == "")
-            {
-               firstName.Text= "FirstName";
-               // firstName.Text = null;
-                
-               //lace = true;
+
+        { 
+               
+                if(string.IsNullOrEmpty(firstName.Text))
+                {
+                    errorProvider1.SetError(firstName, $"Give First Name!");
+                }
+                    
+               
             }
 
-        }
+        
 
        
         private void lastName_Click(object sender, EventArgs e)
@@ -54,11 +56,12 @@ namespace CSFinalProject_University_
 
         private void lastName_Leave(object sender, EventArgs e)
         {
-            if (lastName.Text == "")
+            if (string.IsNullOrEmpty(lastName.Text))
             {
-                
-                lastName.Text = "Last Name";
-                
+
+                //lastName.Text = "Last Name";
+                errorProvider2.SetError(lastName, $"Give Last Name!");
+
             }
         }
 
@@ -70,10 +73,11 @@ namespace CSFinalProject_University_
 
         private void StudentID_Leave(object sender, EventArgs e)
         {
-            if (StudentID.Text == "")
+            if (string.IsNullOrEmpty(StudentID.Text))
             {
-                StudentID.Text = "Student ID";
-                
+                //StudentID.Text = "Student ID";
+                errorProvider3.SetError(StudentID, $"Give Your ID!");
+
             }
         }
 
@@ -204,7 +208,7 @@ namespace CSFinalProject_University_
             else
             {
                 e.Cancel = false;
-                errorProvider1.SetError(lastName, "");
+                errorProvider2.SetError(lastName, "");
             }
         }
 
