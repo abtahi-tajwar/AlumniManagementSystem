@@ -18,7 +18,9 @@ namespace CSFinalProject_University_
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             session = new Session();
-            UserNameText.Text = Session.fname + " " + Session.lname;
+            UserNameText.Text = Session.fname + " " + Session.lname + " \n" ;
+            label9.Text = Session.subtitle+"\n";
+            label15.Text = Session.email + "\n";
 
         }
 
@@ -34,7 +36,7 @@ namespace CSFinalProject_University_
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
